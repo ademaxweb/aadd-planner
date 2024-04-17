@@ -1,18 +1,22 @@
 [
-  {
-    "name": "Алексей К.",
-    "role": "fullstack"
-  },
-  {
-    "name": "Андрей М.",
-    "role": "fullstack"
-  },
-  {
-    "name": "Дмитрий Г.",
-    "role": "teamlead"
-  },
-  {
-    "name": "Дмитрий П.",
-    "role": "frontentd"
-  }
+	{
+		"id": 1,
+		"name": "Алексей К.",
+		"role": "fullstack"
+	},
+	{
+		"id": 2,
+		"name": "Андрей М.",
+		"role": "fullstack"
+	},
+	{
+		"id": 3,
+		"name": "Дмитрий Г.",
+		"role": "teamlead"
+	},
+	{
+		"id": 4,
+		"name": "Дмитрий П.",
+		"role": "frontentd"
+	}
 ]

@@ -1,7 +1,7 @@
 <template>
 	<div class="developer_select_card">
-		<h2 class="text-2xl uppercase font-semibold">Комаровский А.</h2>
-		<span class="text-lg uppercase text-gray-400">Full-stack</span>
+		<h2 class="text-2xl uppercase font-semibold">{{ developer.name }}</h2>
+		<span class="text-lg uppercase text-gray-400">{{ developer.role }}</span>
 		<button class="button button--primary w-full text-lg">
 			<ArrowRightEndOnRectangleIcon class="h-5 w-5" />
 			<span>Выбрать</span>
@@ -11,6 +11,10 @@
 
 <script lang="ts" setup>
 	import { ArrowRightEndOnRectangleIcon } from '@heroicons/vue/24/solid';
+	import type { IDeveloper } from '~/types/IDeveloper';
+	const props = defineProps<{
+		developer: IDeveloper;
+	}>();
 </script>
 
 <style scoped>
