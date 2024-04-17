@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  background: #f8f8f8;
+}
+
+.page_heading {
+  @apply text-6xl;
+}
+
+.button {
+	@apply uppercase flex items-center justify-center gap-2 rounded-md px-8 py-2 transition;
+}
+
+.button--primary {
+	@apply bg-emerald-500 enabled:hover:bg-emerald-600 enabled:active:bg-emerald-700 text-white;
+}
+
+.button--success {
+}
