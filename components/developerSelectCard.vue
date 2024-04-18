@@ -2,7 +2,11 @@
 	<div class="developer_select_card">
 		<h2 class="text-2xl uppercase font-semibold">{{ developer.name }}</h2>
 		<span class="text-lg uppercase text-gray-400">{{ developer.role }}</span>
-		<button class="button button--primary w-full text-lg">
+		<button
+			class="button button--primary w-full text-lg px-8 py-2"
+			@click="login(developer)"
+			:disabled="isLoggedIn"
+		>
 			<ArrowRightEndOnRectangleIcon class="h-5 w-5" />
 			<span>Выбрать</span>
 		</button>
@@ -15,6 +19,8 @@
 	const props = defineProps<{
 		developer: IDeveloper;
 	}>();
+
+	const { login, isLoggedIn } = useAuth();
 </script>
 
 <style scoped>

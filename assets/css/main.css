@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 html {
-  background: #f8f8f8;
+	background: #f8f8f8;
 }
 
 .page_heading {
-  @apply text-6xl;
+	@apply text-lg lg:text-6xl;
 }
 
 .button {
-	@apply uppercase flex items-center justify-center gap-2 rounded-md px-8 py-2 transition;
+	@apply uppercase flex items-center justify-center gap-2 rounded-md hover:bg-gray-200 transition disabled:bg-gray-400;
 }
 
 .button--primary {
